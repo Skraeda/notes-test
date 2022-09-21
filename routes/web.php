@@ -17,3 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::resource('notes', '\App\Http\Controllers\NotesController');
