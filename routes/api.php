@@ -31,4 +31,4 @@ Route::get('/patient/{id}', '\App\Http\Controllers\PatientController@getPatientI
 //Route::get('notes', 'App\Http\Controllers\NotesApiController@getAllNotes'); // read
 //Route::post('/add-note', 'App\Http\Controllers\NotesApiController@addNote'); // create
 //Route::put('/update-note/{id}', 'App\Http\Controllers\NotesApiController@updateNote'); // update
-//Route::delete('/delete-note/{id}', 'App\Http\Controllers\NotesApiController@deleteNote'); // delete
+//Route::delete('/delete-note/{id}', 'App\Http\Controllers\NotesController@destroy'); // delete
