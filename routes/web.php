@@ -17,4 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+// Get Patient with all notes
+Route::get('/patient/{id}', '\App\Http\Controllers\PatientController@getPatientInfo');
+
+// CRUD
 Route::resource('notes', '\App\Http\Controllers\NotesController');

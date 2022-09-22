@@ -18,15 +18,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-// CRUD
-Route::apiResource('/notes', '\App\Http\Resources\NotesApiController');
-
-// Get Patient with all notes
-Route::get('/patient/{id}', '\App\Http\Controllers\PatientController@getPatientInfo');
-
-
-
-
 
 //Route::get('notes', 'App\Http\Controllers\NotesApiController@getAllNotes'); // read
 //Route::post('/add-note', 'App\Http\Controllers\NotesApiController@addNote'); // create
